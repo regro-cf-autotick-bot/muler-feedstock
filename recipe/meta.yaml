@@ -25,7 +25,7 @@ requirements:
     - numpy 
     - scipy 
     - celerite2
-    - gwcs<0.17
+    - gwcs <0.17
     - pandas
     - matplotlib-base
     - h5py
