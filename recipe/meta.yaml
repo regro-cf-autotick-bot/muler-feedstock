@@ -1,5 +1,5 @@
 {% set name = "muler" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fd27f42011727473b1dca834166d4eff9d84e2118d751f592008016bc8879d50
+  sha256: 4b4ae7c408a506c3ee67be8a61aa9fbdc821575f783bd94380e5bb92fb520b02
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - numpy 
     - scipy 
     - celerite2
+    - gwcs <0.17
     - pandas
     - matplotlib-base
     - h5py
