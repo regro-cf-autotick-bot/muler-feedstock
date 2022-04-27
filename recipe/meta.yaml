@@ -1,5 +1,5 @@
 {% set name = "muler" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 08f82719adf776b1c90a0bf1cc5299ee565d2dbd79b463d282a960daa5f62f5d
+  sha256: 19c9c78cf6323ecc830b521d362f2c2d63c34758a225016f40e2e01ec7a01229
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,8 +22,8 @@ requirements:
     - python >=3.6
     - astropy >=4.1
     - specutils >=1.2
-    - numpy 
-    - scipy 
+    - numpy
+    - scipy
     - celerite2
     - gwcs >=0.17.1
     - pandas
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A Python package for working with pipeline-produced data from IGRINS and HPF'
+  summary: A Python package for working with pipeline-produced data from IGRINS and HPF
   description: |
     muler is an easy to use Python package for post-processing echelle
     spectroscopy from near-infrared astronomical spectrographs.  We currently
