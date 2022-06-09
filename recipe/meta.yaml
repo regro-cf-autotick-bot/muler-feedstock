@@ -16,18 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - astropy >=4.1
-    - specutils >=1.2
+    - specutils >=1.5
     - numpy
     - scipy
     - celerite2
-    - gwcs >=0.17.1
     - pandas
     - matplotlib-base
+    - importlib_resources
     - h5py
 
 test:
