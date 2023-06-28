@@ -1,5 +1,5 @@
 {% set name = "muler" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 10516d9f83c22f881b606218923ebea89a6842aa97d485ab27416ca4c7fc47a6
+  sha256: 65803c0b06905c16fce1e7b99246206207b714cd7c6d95a21b3e16f330ee2dde
 
 build:
   noarch: python
