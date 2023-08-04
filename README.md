@@ -1,11 +1,11 @@
-About muler
-===========
+About muler-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/muler-feedstock/blob/main/LICENSE.txt)
 
 Home: https://muler.readthedocs.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/muler-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python package for working with pipeline-produced data from IGRINS and HPF
 
