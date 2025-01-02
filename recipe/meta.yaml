@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 65803c0b06905c16fce1e7b99246206207b714cd7c6d95a21b3e16f330ee2dde
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - astropy >=4.1
     - specutils >=1.5
     - numpy
@@ -31,6 +31,8 @@ requirements:
     - h5py
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - muler
 
